@@ -1,0 +1,34 @@
+name: Report an Issue
+description: Report an issue with the mod.
+labels: ["type: bug", "status: awaiting review"]
+body:
+  - type: dropdown
+    id: version
+    attributes:
+      label: What version are you seeing the problem on?
+      options:
+        - 1.16.x
+        - 1.18.x
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the issue
+      description: Provide the steps you took to have this issue
+      placeholder: |
+        1. First do this...
+        2. Then this...
+        3. Then this happens...
+        4. etc.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: latest.log
+      description: Please copy and paste the text from `latest.log`. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+    validations:
+      required: true
