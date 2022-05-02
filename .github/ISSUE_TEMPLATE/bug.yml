@@ -7,8 +7,9 @@ body:
     attributes:
       label: What version are you seeing the problem on?
       options:
-        - 1.16.x
-        - 1.18.x
+        - 1.16.5
+        - 1.18(.1)
+        - 1.18.2
     validations:
       required: true
   - type: textarea
