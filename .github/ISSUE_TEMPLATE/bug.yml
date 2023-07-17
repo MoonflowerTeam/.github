@@ -10,6 +10,7 @@ body:
         - 1.16.5
         - 1.18(.1)
         - 1.18.2
+        - 1.19.2
     validations:
       required: true
   - type: textarea
@@ -20,16 +21,14 @@ body:
       placeholder: |
         1. First do this...
         2. Then this...
-        3. Then this happens...
-        4. etc.
-      render: markdown
+        3. Finally this happens...
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
       label: latest.log
-      description: Please copy and paste the text from `latest.log`. This will be automatically formatted into code, so no need for backticks.
+      description: Please copy and paste the text from `latest.log` or a Pastebin link.
       render: shell
     validations:
       required: true
